@@ -1,0 +1,24 @@
+{
+  "name": "kacper_cv",
+  "version": "1.0.0",
+  "description": "Strona tworzona dla Kacpra między innymi w celach rozwojowych i nauki narzędzi takich jak GIT oraz webpack.\r Wykorzysywane będą biblioteki frontedowe pomagające animowanać stronę np. AOS.",
+  "main": "index.js",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamianoCode/kacper_cv.git"
+  },
+  "keywords": [],
+  "author": "DamianoCode <dam1138@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamianoCode/kacper_cv/issues"
+  },
+  "homepage": "https://github.com/DamianoCode/kacper_cv#readme"
+}

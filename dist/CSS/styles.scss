@@ -1,0 +1,39 @@
+$second-color: #fff;
+$main-color: #EE1D25;
+
+body{
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+}
+p{
+    margin: 0;
+}
+.segment{
+    margin: 0 250px 50px 250px;
+    border-top: 1px solid $main-color;
+}
+.color__text{
+    color: $main-color;
+}
+.color__background{
+    background-color: $main-color;
+}
+.secondcolor__text{
+    color: $second-color;
+}
+.center__text{
+    text-align: center;
+}
+.left-right{
+    div:nth-child(even){
+        text-align: left;
+    }
+    div:nth-child(odd){
+        text-align: right;
+    }
+}
+.footer{
+    height: 40vh;
+}

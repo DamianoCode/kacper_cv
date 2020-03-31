@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
+
 $second-color: #fff;
 $main-color: #EE1D25;
 
@@ -6,6 +8,7 @@ body{
    padding: 0;
    height: 100%;
    width: 100%;
+   font-family: 'Dosis', sans-serif;
 }
 p{
     margin: 0;
@@ -13,9 +16,13 @@ p{
 .segment{
     margin: 0 250px 50px 250px;
     border-top: 1px solid $main-color;
+    .segment__element{
+        margin-bottom: 100px;
+    }
 }
 .color__text{
     color: $main-color;
+    font-weight: bold;
 }
 .color__background{
     background-color: $main-color;
@@ -36,4 +43,7 @@ p{
 }
 .footer{
     height: 40vh;
+}
+.medium__text{
+    font-weight: 500;
 }

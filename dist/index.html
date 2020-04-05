@@ -12,16 +12,20 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/49fb5c9543.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="banner">
         <div class="banner__content">
-            <div class="color__background"><h1 class="secondcolor__text">Kacper Ksykiewicz</h1></div>
-            <div><h2 class="color__text">Nauczyciel języka angielskiego</h2></div>
-            <div><img src=""></div>
+            <div class="banner__content--imagehidden"><img src="images/main-photo.png"></div>
+            <div class="color__background banner__content--line"><h1 class="secondcolor__text">Kacper Ksykiewicz</h1>
+            <div class="banner__content--image"><img src="images/main-photo.png"></div>
+            </div>
+            <div class="banner__content--underline"><h2 class="color__text">Nauczyciel języka angielskiego</h2></div>
         </div>
     </div>
-    <div class="segment">
+    <div data-aos="fade-left" class="segment">
         <div>
             <h2 class="color__text">Doświadczenie</h2>
         </div>
@@ -55,7 +59,7 @@
             </ul>
         </div>
     </div>
-    <div class="segment left-right">
+    <div data-aos="fade-right" class="segment left-right">
         <div>
             <h2 class="color__text">Edukacja</h2>
         </div>
@@ -85,50 +89,62 @@
             Curie - Skłodowskiej w Lublinie (studia magisterskie)</p>
         </div>
     </div>
-    <div class="segment">
+    <div data-aos="fade-left" class="segment">
         <div>
             <h2 class="color__text">Umiejętności</h2>
         </div>
-        <div>Efektywne zarządzanie klasą</div>
-        <div>Posługiwanie się pakietem
-        biurowym MS Office i iWorks</div>
-        <div>Posługiwanie się pakietem
-        graficznym Adobe</div>
-        <div>Wykorzystanie nowoczesnej
-        technologii w nauczaniu (iPad,
-        tablice interaktywne, narzędzia
-        online)</div>
-        <div>Tworzenie stron internetowych</div>
-        <div>Doskonała umiejętność
-        komunikowania się z dziećmi i
-        młodzieżą</div>
-    </div>
-    <div class="segment">
-        <div>
-            <h2 class="color__text">Zainteresowania</h2>
+        <div class="segment__grid">
+            <div class="segment__grid--box"><img src="images/class.jpeg" alt="Zdjęcie autorstwa Pixabay z Pexels">Efektywne zarządzanie klasą</div>
+            <div class="segment__grid--box"><img src="images/documents.jpeg" alt="Zdjęcie autorstwa Lukas z Pexels">  Posługiwanie się pakietem
+                biurowym MS Office i iWorks</div>
+            <div class="segment__grid--box"><img src="images/adobe.jpeg" alt="Zdjęcie autorstwa Matan Segev z Pexels">Posługiwanie się pakietem
+                graficznym Adobe</div>
+            <div class="segment__grid--box"><img src="images/ipad.jpeg" alt="Zdjęcie autorstwa Pixabay z Pexels">Wykorzystanie nowoczesnej
+                technologii w nauczaniu (iPad,
+                tablice interaktywne, narzędzia
+                online)</div>
+            <div class="segment__grid--box"><img src="images/websites.jpeg" alt="Zdjęcie autorstwa Pixabay z Pexels">Tworzenie stron internetowych</div>
+            <div class="segment__grid--box"><img src="images/communication.jpeg" alt="Zdjęcie autorstwa Miguel Á. Padriñán z Pexels">Doskonała umiejętność
+                komunikowania się z dziećmi i
+                młodzieżą</div>
         </div>
-        <dir class="slider">
-            <div>Muzyka</div>
-            <div>Film</div>
-            <div>Podróże</div>
-            <div>Hi-Tech</div>
-            <div>Fotografia</div>
-        </dir>
+    </div>
+    <div data-aos="fade-right" class="segment">
+        <div>
+            <h2 class="color__text text__right">Zainteresowania</h2>
+        </div>
+        <div class="slider">
+            <div class="slider__box"><i class="fas fa-headphones-alt"></i>Muzyka</div>
+            <div class="slider__box"><i class="fas fa-video"></i>Film</div>
+            <div class="slider__box"><i class="fas fa-suitcase-rolling"></i>Podróże</div>
+            <div class="slider__box"><i class="fas fa-mobile-alt"></i>Hi-Tech</div>
+            <div class="slider__box"><i class="fas fa-camera-retro"></i>Fotografia</div>
+        </div>
     </div>
     <footer class="color__background secondcolor__text footer">
         <div class="segment">
             <div class="center__text">
                 <h2>Kontakt</h2>
             </div>
-            <p>Telefon</p>
-            <p>Email</p>
-            <p>WWW</p>
-            <div>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
+            <div class="footer__container">
+                <div>
+                    <p>Telefon:</p>
+                    <p>Email:</p>
+                    <p>WWW:</p>
+                </div>
+                <div class="footer__socialmedia">
+                    <a href=""><i class="fab fa-facebook-square secondcolor__text"></i></a>
+                    <a href=""><i class="fab fa-linkedin secondcolor__text"></i></a>
+                    <a href=""><i class="fab fa-instagram-square secondcolor__text"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+            duration: 1500
+        });
+</script>
 </html>

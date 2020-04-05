@@ -4,6 +4,7 @@ $second-color: #fff;
 $main-color: #ee1d25;
 
 body{
+   overflow-x: hidden;
    margin: 0;
    padding: 0;
    height: 100%;
@@ -22,6 +23,7 @@ p{
     @media screen and (max-width:1820px){
         justify-content: center;
         align-items: center;
+        margin-bottom: 70px;
     }
     .banner__content{
         display: flex;
@@ -40,8 +42,11 @@ p{
                 height: 60px;
                 width: 40vw;
                 @media screen and (max-width:1820px){
-                width: 60vw;
+                width: 65vw;
                 text-align: center;
+                }
+                @media screen and (max-width:400px){
+                width: 80vw;
                 }
                 h1{
                 @media screen and (max-width:1820px){
@@ -105,8 +110,13 @@ p{
 }
 .segment{
     margin: 0 250px 50px 250px;
+    @media screen and (max-width:1750px){
+        margin: 0 150px 50px 150px;
+        padding: 0 10px 0 10px;
+    }
     @media screen and (max-width:1200px){
         margin: 0 0 50px 0;
+        padding: 0 10px 0 10px;
     }
     border-top: 1px solid $main-color;
     .segment__element{
@@ -115,7 +125,7 @@ p{
     .segment__grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        @media screen and (max-width:1200px){
+        @media screen and (max-width:1620px){
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         }
@@ -128,11 +138,19 @@ p{
         justify-items: center;
         .segment__grid--box{
             //margin: auto;
+            @media screen and (max-width:400px){
+                width: 300px;
+                height: 300px;
+                // img{
+                // max-width:100%;
+                // height:auto;
+                // }
+            }
             width: 350px;
             height: 350px;
             img{
-                height: 350px;
-                width: 350px;
+                max-width:100%;
+                height:auto;
             }
         }
     }
@@ -170,11 +188,23 @@ p{
     justify-content: space-between;
     width: 100%;
     height: 75%;
+    .footer__text{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align-last: center;
+    }
     .footer__socialmedia{
-    display: inline-block;
+    display: inline-flex;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
+    justify-content: space-between;
+    width: 200px;
         i{
-        font-size: 40px;
+        font-size: 30px;
         }
     }
     }
@@ -185,6 +215,9 @@ p{
 .slider{
     display: flex;
     flex-direction: row;
+    @media screen and (max-width:960px){
+        flex-wrap: wrap;
+    }
     justify-content: space-evenly;
     div:nth-child(1){
         background-color:$main-color;
@@ -212,8 +245,17 @@ p{
         justify-content: center;
         align-items: center;
         color: white;
-        width: 13vw;
-        height: 13vw;
+        @media screen and (max-width:960px){
+        width: 20vw;
+        height: 20vw;
+        margin-bottom: 35px;
+        }
+        @media screen and (max-width:400px){
+        width: 24vw;
+        height: 24vw;
+        }
+        width: 14vw;
+        height: 14vw;
         i{
             font-size: 30px;
         }

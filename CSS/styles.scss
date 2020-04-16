@@ -112,7 +112,7 @@ p{
     margin: 0 250px 50px 250px;
     @media screen and (max-width:1750px){
         margin: 0 150px 50px 150px;
-        padding: 0 10px 0 10px;
+        padding: 10px 10px 10px 10px;
     }
     @media screen and (max-width:1200px){
         margin: 0 0 50px 0;
@@ -133,7 +133,7 @@ p{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         }
-        grid-row-gap: 35px;
+        grid-row-gap: 45px;
         grid-column-gap: 35px;
         justify-items: center;
         .segment__grid--box{

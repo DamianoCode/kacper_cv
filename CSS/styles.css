@@ -169,7 +169,7 @@ p {
 @media screen and (max-width: 1750px) {
   .segment {
     margin: 0 150px 50px 150px;
-    padding: 0 10px 0 10px;
+    padding: 10px 10px 10px 10px;
   }
 }
 
@@ -189,7 +189,7 @@ p {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 35px;
+  grid-row-gap: 45px;
   grid-column-gap: 35px;
   justify-items: center;
 }
@@ -211,8 +211,6 @@ p {
 .segment .segment__grid .segment__grid--box {
   width: 350px;
   height: 350px;
-  align-self: baseline;
-  text-align: center;
 }
 
 @media screen and (max-width: 400px) {

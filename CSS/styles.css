@@ -188,10 +188,11 @@ p {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 45px;
   grid-column-gap: 35px;
   justify-items: center;
+  align-items: baseline;
 }
 
 @media screen and (max-width: 1620px) {
@@ -242,11 +243,7 @@ p {
   text-align: center;
 }
 
-.left-right div:nth-child(even) {
-  text-align: left;
-}
-
-.left-right div:nth-child(odd) {
+.left-right{
   text-align: right;
 }
 
